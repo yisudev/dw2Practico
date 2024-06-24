@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD con AJAX y PHP</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD con AJAX y PHP</h1>
+
+        <div class="form-container">
+            <h2>Crear nuevo registro</h2>
+            <form id="createForm">
+                <input type="text" id="createNombre" placeholder="Nombre" required>
+                <input type="text" id="createApellido" placeholder="Apellido" required>
+                <input type="date" id="createCumple" placeholder="Cumpleaños" required>
+                <input type="email" id="createEmail" placeholder="Email" required>
+                <input type="text" id="createCelular" placeholder="Celular" required>
+                <button type="submit">Crear</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Actualizar registro</h2>
+            <form id="updateForm">
+                <input type="number" id="updateId" placeholder="ID" required>
+                <input type="text" id="updateNombre" placeholder="Nombre" required>
+                <input type="text" id="updateApellido" placeholder="Apellido" required>
+                <input type="date" id="updateCumple" placeholder="Cumpleaños" required>
+                <input type="email" id="updateEmail" placeholder="Email" required>
+                <input type="text" id="updateCelular" placeholder="Celular" required>
+                <button type="submit">Actualizar</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Eliminar registro</h2>
+            <form id="deleteForm">
+                <input type="number" id="deleteId" placeholder="ID" required>
+                <button type="submit">Eliminar</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Lista de registros</h2>
+            <button id="loadData">Cargar datos</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Cumpleaños</th>
+                        <th>Email</th>
+                        <th>Celular</th>
+                    </tr>
+                </thead>
+                <tbody id="dataBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
