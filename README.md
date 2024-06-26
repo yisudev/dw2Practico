@@ -8,9 +8,9 @@ Navegador web
 Instalación
 Clonar el repositorio
 bash
-git clone https://github.com/tu_usuario/tu_repositorio.git
+git clone    https://github.com/tu_usuario/tu_repositorio.git
 Configurar la base de datos
-Importar el archivo database.sql en tu servidor de base de datos para crear las tablas necesarias.
+Importar el archivo personas.sql en tu servidor de base de datos para crear las tablas necesarias.
 Configurar la conexión a la base de datos
 Editar el archivo includes/db.php con tus credenciales de base de datos.
 php
